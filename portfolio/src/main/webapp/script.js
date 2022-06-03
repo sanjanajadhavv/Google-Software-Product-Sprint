@@ -17,7 +17,7 @@
  */
 function addRandomGreeting() {
   const greetings =
-      ['Hello world!', '¡Hola Mundo!', '你好，世界！', 'Bonjour le monde!'];
+      ['Drake', 'Post Malone', 'The Weeknd', 'Ariana Grande', 'A$AP Rocky', 'Juice WRLD', 'PARTYNEXTDOOR', 'Tyler, The Creator', 'Doja Cat', 'Khalid', 'Brent Faiyaz', 'Arijit Singh', 'Atif Aslam', 'Pritam'];
 
   // Pick a random greeting.
   const greeting = greetings[Math.floor(Math.random() * greetings.length)];
