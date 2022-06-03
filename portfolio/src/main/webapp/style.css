@@ -12,3 +12,17 @@ body {
     background: rgb(238,174,202);
     background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
 }
+
+.p1 {
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-weight: bold;
+}
+
+.boxed {
+    position: relative;
+    width: 700px;
+    height: 300px;
+    background-color: #fff;
+    overflow: hidden;
+    margin-bottom: 4px;
+}
