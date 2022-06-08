@@ -1,12 +1,18 @@
 #content {
-  margin-left: auto;
-  margin-right: auto;
-  width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 650px;
 }
 
 #greeting-container {
   margin-top: 20px;
 }
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center
+  }
 
 body {
     background: rgb(238,174,202);
@@ -14,15 +20,15 @@ body {
 }
 
 .p1 {
-    font-family: "Lucida Console", "Courier New", monospace;
+    font-family: "Monaco", monospace;
     font-weight: bold;
 }
 
 .boxed {
-    position: relative;
-    width: 700px;
-    height: 300px;
-    background-color: #fff;
-    overflow: hidden;
-    margin-bottom: 4px;
+    border-radius: 25px;
+    box-shadow: 5px 5px 12px -8px black;
+    background: white;
+    padding: 20px; 
+    width: 5000px;
+    height: 1200px; 
 }
