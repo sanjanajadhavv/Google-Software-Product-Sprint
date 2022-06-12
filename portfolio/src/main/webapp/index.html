@@ -18,7 +18,7 @@
                         alt="LinkedIn img" style="width:42px;height:42px;"></a>
                 <a href="https://github.com/sanjanajadhavv" target="_blank"><img src="/images/github.png"
                         alt="Github Img" style="width:42px;height:42px;"></a>
-                
+
                 <p>
 
 
@@ -87,17 +87,23 @@
             </div>
         </div>
 
-        <p class="p1" >Click <a href="/hello">here</a> to see content created by server code.</p>
+        <p class="p1">Click <a href="/hello">here</a> to see content created by server code.</p>
         <p class="p1">Click here to know some of my favorite artists!</p>
         <button onclick="addRandomGreeting()">Click:)</button>
         <div id="greeting-container"></div>
-        
+
         <form action="/form-handler" method="POST">
             <p>Enter some text here:</p>
             <textarea name="text-input">hello world</textarea>
-            <br/>
+            <br />
             <input type="submit" />
         </form>
+
+        <p>Click this button to see the server's current date.</p>
+        <button onclick="showServerTime();">
+            Get date
+        </button>
+        <p id="date-container"></p>
 
     </div>
 </body>
