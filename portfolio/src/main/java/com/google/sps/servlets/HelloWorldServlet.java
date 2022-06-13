@@ -14,6 +14,8 @@ public class HelloWorldServlet extends HttpServlet {
 
   @Override
   public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
+    pageViews++;
+    
     response.setContentType("text/html;");
     response.getWriter().println("<h1>Hello Sanjana Jadhav!</h1>");
     response.getWriter().println("<p>This page has been viewed " + pageViews + " times.</p>");
