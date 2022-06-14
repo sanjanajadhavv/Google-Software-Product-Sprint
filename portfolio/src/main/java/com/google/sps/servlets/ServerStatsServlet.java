@@ -29,16 +29,11 @@ public final class ServerStatsServlet extends HttpServlet {
   public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
     // Calculate server stats
     ArrayList<String> list = new ArrayList<String>();
-    String val1 = new String("Movie (Romance/Family Drama): Kabhi Khushi Kabhi Gham");
-    list.add(val1);
-    String val2 = new String("Movie (Romance/Family Drama): Kuch Kuch Hota Hai");
-    list.add(val2);
-    String val3 = new String("TV Show (Comedy/Sitcom): Brooklyn 99");
-    list.add(val3);
-    String val4 = new String("Tv Show (Comedy/Sitcom): Friends");
-    list.add(val4);
-    String val5 = new String("TV Show (Comedy/Sitcom): New Girl");
-    list.add(val5);
+    list.add("Movie (Romance/Family Drama): Kabhi Khushi Kabhi Gham");
+    list.add("Movie (Romance/Family Drama): Kuch Kuch Hota Hai");
+    list.add("TV Show (Comedy/Sitcom): Brooklyn 99");
+    list.add("TV Show (Comedy/Sitcom): Friends");
+    list.add("TV Show (Comedy/Sitcom): New Girl");
 
     // Convert the server stats to JSON
     Gson gson = new Gson();
