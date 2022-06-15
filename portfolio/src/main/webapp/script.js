@@ -16,13 +16,30 @@
  * Adds a random greeting to the page.
  */
 function addRandomGreeting() {
-  const greetings =
-      ['Drake', 'Post Malone', 'The Weeknd', 'Ariana Grande', 'A$AP Rocky', 'Juice WRLD', 'PARTYNEXTDOOR', 'Tyler, The Creator', 'Doja Cat', 'Khalid', 'Brent Faiyaz', 'Arijit Singh', 'Atif Aslam', 'Pritam'];
+    const greetings =
+        ['Drake', 'Post Malone', 'The Weeknd', 'Ariana Grande', 'A$AP Rocky', 'Juice WRLD', 'PARTYNEXTDOOR', 'Tyler, The Creator', 'Doja Cat', 'Khalid', 'Brent Faiyaz', 'Arijit Singh', 'Atif Aslam', 'Pritam'];
 
-  // Pick a random greeting.
-  const greeting = greetings[Math.floor(Math.random() * greetings.length)];
+    // Pick a random greeting.
+    const greeting = greetings[Math.floor(Math.random() * greetings.length)];
 
-  // Add it to the page.
-  const greetingContainer = document.getElementById('greeting-container');
-  greetingContainer.innerText = greeting;
+    // Add it to the page.
+    const greetingContainer = document.getElementById('greeting-container');
+    greetingContainer.innerText = greeting;
+}
+
+async function showServerTime() {
+    const responseFromServer = await fetch('/date');
+    const textFromResponse = await responseFromServer.text();
+
+    const dateContainer = document.getElementById('date-container');
+    dateContainer.innerText = textFromResponse;
+}
+
+async function getStats() {
+    const responseFromServer = await fetch('/server-stats');
+    const stats = await responseFromServer.json();
+    const stat = stats[Math.floor(Math.random() * stats.length)];
+
+    const statsListElement = document.getElementById('stats-container');
+    statsListElement.innerText = stat;
 }
