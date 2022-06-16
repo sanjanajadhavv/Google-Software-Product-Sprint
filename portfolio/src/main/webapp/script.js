@@ -43,3 +43,4 @@ async function getStats() {
     const statsListElement = document.getElementById('stats-container');
     statsListElement.innerText = stat;
 }
+
