@@ -8,6 +8,10 @@
   margin-top: 20px;
 }
 
+.inline {
+    display: inline;
+}
+
 .container {
     display: flex;
     align-items: center;
@@ -20,8 +24,8 @@ body {
 }
 
 .p1 {
-    font-family: "Lucida Console", "Menlo", "Monaco", "Courier", monospace;
-    font-weight: normal;
+    font-family: "Roboto Mono", monospace;
+    font-weight: medium;
 }
 
 .boxed {
