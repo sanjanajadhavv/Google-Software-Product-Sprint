@@ -41,6 +41,8 @@ public class FormHandlerServlet extends HttpServlet {
         response.getWriter().println("You Submitted: " + finalText);
         System.out.println("Submission: " + finalText);
 
+        response.sendRedirect("https://sjadhav-sps-summer22.uc.r.appspot.com");
+
     }
 
     /**
