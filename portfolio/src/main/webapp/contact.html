@@ -44,11 +44,33 @@
 
         </p>
         <div class="container">
-            <div class="boxed">
+            <div class="boxedContact">
                 <fieldset>
                     <form action="/form-handler" method="POST">
                         <p class="p1">Contact Me! I would love to hear from you :) </p>
-                        <textarea class="p1" name="text-input">hello world</textarea>
+                        <p class="p1" >Your Name:</p>
+                        <input type="text" name="name-input" />
+                        <br />
+                        <p class="p1" >Contact Type: </p>
+                        <input type="checkbox" name="phone" value="true">
+                        <label class="p1" for="phone"> Phone</label><br>
+                        <input type="checkbox" name="email" value="true">
+                        <label class="p1" for="email"> Email</label><br>
+                        <input type="checkbox" name="linkedin" value="true">
+                        <label class="p1" for="linkedin"> Linkedin</label><br>
+                        <input type="checkbox" name="handshake" value="true">
+                        <label class="p1" for="handshake"> Handshake</label><br>
+                        <input type="checkbox" name="other" value="true">
+                        <label class="p1" for="Other"> Other</label><br>
+                        <p class="p1">Enter Contact Info:</p>
+                        <input type="text" name="text-input" />
+                        <br />
+                        
+
+                        <p class="p1">Leave me a message here :)</p>
+                        <textarea name="message-input"></textarea>
+                        <br />
+
                         <br />
                         <input class="p1 slide" type="submit" />
                     </form>

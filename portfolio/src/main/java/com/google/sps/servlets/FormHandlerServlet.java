@@ -21,23 +21,24 @@ public class FormHandlerServlet extends HttpServlet {
         boolean handshake = Boolean.parseBoolean(request.getParameter("handshake"));
         boolean email = Boolean.parseBoolean(request.getParameter("email"));
         boolean other = Boolean.parseBoolean(request.getParameter("other"));
+        String name = request.getParameter("name-input");
+        String message = request.getParameter("message-input");
 
         if (phone == true) {
-            finalText = "Phone Number: " + phone;
+            finalText = "Your Name: " + name + " Phone Number: " + textValue + " Your Message: " + message;
         } else if (linkedin == true) {
-            finalText = "Linkedin: " + linkedin;
+            finalText = "Your Name: " + name + " Linkedin: " + textValue + " Your Message: " + message;
         } else if (handshake == true) {
-            finalText = "Handshake: " + handshake;
+            finalText = "Your Name: " + name + " HandShake: " + textValue + " Your Message: " + message;
         } else if (email == true) {
-            finalText = "Email: " + email;
-        }
-        else if (other == true) {
-            finalText = "Other: " + email;
+            finalText = "Your Name: " + name + " Email: " + textValue + " Your Message: " + message;
+        } else if (other == true) {
+            finalText = "Your Name: " + name + " Other: " + textValue + " Your Message: " + message;
         }
 
         // Respond with the result.
         response.setContentType("text/html;");
-        response.getWriter().println("You submitted: " + textValue);
+        response.getWriter().println("You Submitted: " + finalText);
         System.out.println("Submission: " + finalText);
 
     }
