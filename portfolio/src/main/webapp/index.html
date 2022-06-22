@@ -17,11 +17,11 @@
             <link rel="stylesheet"
                 href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css" />
             <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap" rel="stylesheet" />
-            <button type="button" class="slide">
+            <button type="button" onclick="window.location.href='about.html';" class="slide">
                 <div>about me</div>
                 <i class="icon-arrow-right"></i>
             </button>
-            <button type="button" class="slide">
+            <button type="button" onclick="window.location.href='projects.html';" class="slide">
                 <div>projects</div>
                 <i class="icon-arrow-right"></i>
             </button>
@@ -29,11 +29,11 @@
                 <div>gallery</div>
                 <i class="icon-arrow-right"></i>
             </button>
-            <button type="button" class="slide">
+            <button type="button" onclick="window.location.href='fun.html';" class="slide">
                 <div>fun:)</div>
                 <i class="icon-arrow-right"></i>
             </button>
-            <button type="button" class="slide">
+            <button type="button" onclick="window.location.href='contact.html';" class="slide">
                 <div>contact me</div>
                 <i class="icon-arrow-right"></i>
             </button>
@@ -107,22 +107,6 @@
 
                 </p>
                 <fieldset>
-                    <p class="p1">My Gallery</p>
-                    <img class="image" src="./images/2.png" alt="">
-                    <img class="image" src="./images/11.png" alt="">
-                    <img class="image" src="./images/3.png" alt="">
-                    <img class="image" src="./images/4.png" alt="">
-                    <img class="image" src="./images/5.png" alt="">
-                    <img class="image" src="./images/6.png" alt="">
-                    <img class="image" src="./images/7.png" alt="">
-                    <img class="image" src="./images/10.png" alt="">
-                </fieldset>
-
-                <p>
-
-
-                </p>
-                <fieldset>
                     <p class="p1">Click <a href="/hello">here</a> to see content created by server code.</p>
                     <p class="p1">Click here to know some of my favorite artists!</p>
                     <button type="button" class="slide" onclick="addRandomGreeting()">
@@ -145,16 +129,16 @@
                     <button type="button" class="slide" onclick="showServerTime()">
                         <div>click :)</div>
                         <i class="icon-arrow-right"></i>
-                        </button>
-                        <p style="color:blue" class="p1" id="date-container"></p>
                     </button>
-                    
-                        <form action="/form-handler" method="POST">
-                            <p class="p1">Enter some text here:</p>
-                            <textarea class="p1" name="text-input">hello world</textarea>
-                            <br />
-                            <input class="p1 slide" type="submit" />
-                        </form>
+                    <p style="color:blue" class="p1" id="date-container"></p>
+                    </button>
+
+                    <form action="/form-handler" method="POST">
+                        <p class="p1">Enter some text here:</p>
+                        <textarea class="p1" name="text-input">hello world</textarea>
+                        <br />
+                        <input class="p1 slide" type="submit" />
+                    </form>
                 </fieldset>
 
             </div>
