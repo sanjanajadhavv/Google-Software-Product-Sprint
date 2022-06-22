@@ -43,38 +43,56 @@
 
 
         </p>
-            <div class="container">
-                <div class="boxed">
-                    <fieldset>
-                        <p class="p1">Click <a href="/hello">here</a> to see content created by server code.</p>
-                        <p class="p1">Click here to know some of my favorite artists!</p>
-                        <button type="button" class="slide" onclick="addRandomGreeting()">
-                            <div>click :)</div>
-                            <i class="icon-arrow-right"></i>
-                        </button>
-                        <div style="color:blue" class="p1" id="greeting-container"></div>
+        <div class="container">
+            <div class="boxedFun">
+                <fieldset>
+                    <p class="p1">Click <a href="/hello">here</a> to see content created by server code.</p>
+                    <p class="p1">Click here to know some of my favorite artists!</p>
+                    <button type="button" class="slide" onclick="addRandomGreeting()">
+                        <div>click :)</div>
+                        <i class="icon-arrow-right"></i>
+                    </button>
+                    <div style="color:blue" class="p1" id="greeting-container"></div>
 
-                        <p class="p1">Click here to know some of my favorite tv shows/movies!</p>
-                        <button type="button" class="slide" onclick="getStats()">
-                            <div>click :)</div>
-                            <i class="icon-arrow-right"></i>
-                        </button>
-                        <p>
+                    <p class="p1">Click here to know some of my favorite tv shows/movies!</p>
+                    <button type="button" class="slide" onclick="getStats()">
+                        <div>click :)</div>
+                        <i class="icon-arrow-right"></i>
+                    </button>
+                    <p>
 
-                        </p>
-                        <div style="color:blue" class="p1" id="stats-container"></div>
+                    </p>
+                    <div style="color:blue" class="p1" id="stats-container"></div>
 
-                        <p class="p1">Click this button to see the server's current date.</p>
-                        <button type="button" class="slide" onclick="showServerTime()">
-                            <div>click :)</div>
-                            <i class="icon-arrow-right"></i>
-                        </button>
-                        <p style="color:blue" class="p1" id="date-container"></p>
-                        </button>
-                    </fieldset>
-                </div>
+                    <p class="p1">Click this button to see the server's current date.</p>
+                    <button type="button" class="slide" onclick="showServerTime()">
+                        <div>click :)</div>
+                        <i class="icon-arrow-right"></i>
+                    </button>
+                    <p style="color:blue" class="p1" id="date-container"></p>
+                    </button>
+                    <br />
+                    <h1>Translation</h1>
+                    <p class="p1" >Type a message and select a language, then click submit to translate it.</p>
+
+                    <textarea id="text"></textarea>
+
+                    <select id="language">
+                        <option value="es">English</option>
+                        <option value="zh">Chinese</option>
+                        <option value="es">Spanish</option>
+                        <option value="hi">Hindi</option>
+                        <option value="ar">Arabic</option>
+                    </select>
+
+                    <button class="p1 slide" onclick="requestTranslation();">Translate</button>
+
+                    <hr />
+                    <div id="result"></div>
+                </fieldset>
             </div>
         </div>
+    </div>
     </div>
 
 </body>
