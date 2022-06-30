@@ -8,6 +8,10 @@
   margin-top: 20px;
 }
 
+.inline {
+    display: inline;
+}
+
 .container {
     display: flex;
     align-items: center;
@@ -20,8 +24,8 @@ body {
 }
 
 .p1 {
-    font-family: "Lucida Console", "Menlo", "Monaco", "Courier", monospace;
-    font-weight: normal;
+    font-family: "Roboto Mono", monospace;
+    font-weight: medium;
 }
 
 .boxed {
@@ -30,7 +34,52 @@ body {
     background: white;
     padding: 20px; 
     width: 7000px;
-    height: 2275px; 
+    height: 700px; 
+}
+
+.boxedPhoto {
+    border-radius: 25px;
+    box-shadow: 5px 5px 12px -8px black;
+    background: white;
+    padding: 20px; 
+    width: 7000px;
+    height: 850px; 
+}
+
+.boxedAbout {
+    border-radius: 25px;
+    box-shadow: 5px 5px 12px -8px black;
+    background: white;
+    padding: 20px; 
+    width: 7000px;
+    height: 570px; 
+}
+
+.boxedProjects {
+    border-radius: 25px;
+    box-shadow: 5px 5px 12px -8px black;
+    background: white;
+    padding: 20px; 
+    width: 7000px;
+    height: 360px; 
+}
+
+.boxedFun {
+    border-radius: 25px;
+    box-shadow: 5px 5px 12px -8px black;
+    background: white;
+    padding: 20px; 
+    width: 7000px;
+    height: 610px; 
+}
+
+.boxedContact {
+    border-radius: 25px;
+    box-shadow: 5px 5px 12px -8px black;
+    background: white;
+    padding: 20px; 
+    width: 7000px;
+    height: 535px; 
 }
 
 fieldset {
@@ -41,3 +90,56 @@ fieldset {
     width: 300px;
     height: 380px;
 }
+
+/* Slide button styling */
+.slide {
+    font-size: 20px;
+    font-weight: 200;
+    letter-spacing: 1px;
+    padding: 13px 30px 13px;
+    outline: 0;
+    margin-right: 10px;
+    border-radius: 25px;
+    border: 1px solid black;
+    cursor: pointer;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0);
+    font-family: "Roboto Mono", monospace;
+  }
+  
+  .slide i {
+    opacity: 0;
+    font-size: 13px;
+    transition: 0.2s;
+    position: absolute;
+    right: 10px;
+    top: 21px;
+    transition: transform 1;
+  }
+  
+  .slide div {
+    transition: transform 0.8s;
+  }
+  
+  .slide:hover div {
+    transform: translateX(-6px);
+  }
+  
+  .slide::after {
+    content: "";
+    background-color: #fddde6;
+    border-radius: 25px;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    top: 7px;
+    left: 7px;
+  }
+  
+  .slide:hover i {
+    opacity: 1;
+    transform: translateX(-6px);
+  }
+  /* End of Slide Button  */
+  

@@ -34,7 +34,7 @@ public final class ServerStatsServlet extends HttpServlet {
     list.add("TV Show (Comedy/Sitcom): Brooklyn 99");
     list.add("TV Show (Comedy/Sitcom): Friends");
     list.add("TV Show (Comedy/Sitcom): New Girl");
-
+    
     // Convert the server stats to JSON
     Gson gson = new Gson();
     String json = gson.toJson(list);
